@@ -1,7 +1,8 @@
 -- 1. Вывести список сотрудников, получающих заработную плату большую чем у непосредственного руководителя
 SELECT * 
 FROM Employee AS employees, Employee AS chief
-WHERE chief.id = employees.chief_id AND employees.salary > chief.salary;
+WHERE chief.id = employees.chief_id 
+AND employees.salary > chief.salary;
 
 -- 2. Вывести список сотрудников, получающих максимальную заработную плату в своем отделе
 SELECT * 
